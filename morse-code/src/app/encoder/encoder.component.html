@@ -1,0 +1,6 @@
+<div class="converter-container">
+  <h3>Text to Morse Code</h3>
+  <input [(ngModel)]="inputText" placeholder="Enter text" class="text-input" />
+  <button (click)="convertTextToMorse()" class="convert-button">Convert to Morse</button>
+  <p class="output">Morse Code: {{ morseService.morseCode() }}</p>
+</div>
