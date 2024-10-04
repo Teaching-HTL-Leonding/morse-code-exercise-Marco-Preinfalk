@@ -1,0 +1,18 @@
+<div class="converter-container">
+  <h3>Text to Morse Code</h3>
+  <input [(ngModel)]="inputText" placeholder="Enter text" class="text-input" />
+  <button
+    (click)="convertTextToMorse()"
+    class="button"
+    [disabled]="morseService.isDisabled() == true"
+  >
+    Convert to Morse
+  </button>
+
+  <p class="output">Morse Code: {{ morseService.morseCode() }}</p>
+  <p *ngIf="morseService.errorMessage() !== ''" class="output">
+    Fehler: {{ morseService.errorMessage() }}
+  </p>
+
+  <button (click)="playMorseCode()" class="button">Play</button>
+</div>
