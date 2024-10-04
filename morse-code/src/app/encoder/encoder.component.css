@@ -29,7 +29,7 @@ h3 {
   outline: none;
 }
 
-.convert-button {
+.button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -40,7 +40,7 @@ h3 {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.convert-button:hover {
+.button:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
 }
